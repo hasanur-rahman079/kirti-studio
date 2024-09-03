@@ -8062,6 +8062,10 @@ html .ui-button.ui-state-disabled:active {
     top: 0;
     left: 0;
   }
+  .leftTextSec .textBox h3 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
 }
 
 .rightTextSec {
@@ -8162,6 +8166,10 @@ html .ui-button.ui-state-disabled:active {
     top: 0;
     left: 0;
   }
+  .rightTextSec .textBox h3 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
 }
 
 .leftImgSlideSec {
@@ -8261,6 +8269,10 @@ html .ui-button.ui-state-disabled:active {
     max-width: 100%;
     top: 0;
     left: 0;
+  }
+  .leftImgSlideSec .textBox h3 {
+    font-size: 18px;
+    margin-bottom: 1rem;
   }
 }
 

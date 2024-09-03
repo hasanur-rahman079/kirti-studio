@@ -708,8 +708,8 @@ label {
 }
 
 .cs-partner_logo_wrap {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  // justify-content: space-between;
   margin: 0 -20px;
 
   @media (max-width: 991px) {
