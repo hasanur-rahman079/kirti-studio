@@ -8037,6 +8037,7 @@ html .ui-button.ui-state-disabled:active {
   padding: 30px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  z-index: 99;
 }
 .leftTextSec .textBox h3 {
   height: 18px;

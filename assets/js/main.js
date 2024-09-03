@@ -768,7 +768,6 @@
           },
           on: {
             autoplayTimeLeft(s, time, progress) {
-              // Ensure corresponding progress elements are updated
               if (progressCircles[index] && progressContents[index]) {
                 progressCircles[index].style.setProperty(
                   "--progress",
@@ -780,27 +779,34 @@
               }
             },
             slideChange: function (swiper) {
-              // Pause all videos when slide changes
-              const videos = swiperElement.querySelectorAll("video");
-              videos.forEach((video) => video.pause());
+              const vimeoPlayers =
+                swiperElement.querySelectorAll(".video iframe");
+              vimeoPlayers.forEach((iframe) => {
+                const player = new Vimeo.Player(iframe);
+                player.pause();
+              });
             },
             slideChangeTransitionEnd: function (swiper) {
-              // Play video if the current slide contains one
               const activeSlide = swiper.slides[swiper.activeIndex];
-              const video = activeSlide.querySelector("video");
+              const iframe = activeSlide.querySelector(".video iframe");
 
-              if (video) {
+              if (iframe) {
+                const player = new Vimeo.Player(iframe);
                 swiper.autoplay.stop();
-                video.play();
-                video.onended = function () {
+                player.play().catch((error) => {
+                  console.error("Vimeo Player Error:", error);
+                });
+
+                player.on("ended", function () {
                   swiper.autoplay.start();
-                };
+                });
               }
             },
           },
         });
       });
   }
+
   /*--------------------------------------------------------------
     21. Dynamic contact form
   --------------------------------------------------------------*/
