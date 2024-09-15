@@ -9,7 +9,11 @@
     <!-- Favicon Icon -->
     <link rel="icon" href="assets/img/favicon.png" />
     <!-- Site Title -->
-    <title>Kirti Studio - Making realities</title>
+    <title>Kirti Creations - Making realities</title>
+    <script
+      src="https://product-gallery.cloudinary.com/latest/all.js"
+      type="text/javascript"
+    ></script>
     <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css" />
     <link rel="stylesheet" href="assets/css/plugins/slick.css" />
@@ -30,7 +34,7 @@
             <div class="cs-main_header_left">
               <a class="cs-site_branding" href="/">
                 <img src="assets/img/logo.png" alt="Kirti Studio Logo" />Keerti
-                Studios
+                Creations
               </a>
             </div>
             <div class="cs-main_header_center">
@@ -72,7 +76,7 @@
           <img src="assets/img/logo.png" alt="Logo" />
         </a>
         <div class="cs-side_header_box">
-          <h2 class="cs-side_header_heading">Kirti Studios</h2>
+          <h2 class="cs-side_header_heading">Keerti Creations</h2>
         </div>
         <div class="cs-side_header_box">
           <h3 class="cs-side_header_title cs-primary_color">Contact Us</h3>
@@ -105,7 +109,7 @@
                   fill="#FF4A17"
                 />
               </svg>
-              <span>keertistudios@gmaill.com</span>
+              <span>info@keerticreations.com</span>
             </li>
             <li>
               <svg
@@ -206,107 +210,23 @@
     <!-- Start Portfolio -->
     <div id="portfolio" class="container">
       <div class="cs-height_180 cs-height_lg_90"></div>
-      <div class="cs-isotop cs-style1 cs-isotop_col_3 cs-has_gutter_24">
+      <div class="cs-isotop cs-style1 cs-isotop_col_3 cs-has_gutter_24 h-100">
         <div class="cs-grid_sizer"></div>
-        <div class="cs-isotop_item ui_ux_design">
-          <span class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div
-              class="cs-portfolio_bg cs-bg"
-              data-src="assets/img/3d-visual/1.jpg"
-            ></div>
-          </span>
+        <!-- Add a loader element -->
+        <div id="loader" style="display: none">
+          <img src="/assets/img/spinner.gif" alt="Loading..." />
         </div>
 
-        <!-- .cs-isotop_item -->
-        <div class="cs-isotop_item logo_design">
-          <span class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div
-              class="cs-portfolio_bg cs-bg"
-              data-src="assets/img/3d-visual/2.jpg"
-            ></div>
-          </span>
-        </div>
-
-        <!-- .cs-isotop_item -->
-        <div class="cs-isotop_item web_design">
-          <span class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div
-              class="cs-portfolio_bg cs-bg"
-              data-src="assets/img/3d-visual/3.jpg"
-            ></div>
-          </span>
-        </div>
-        <!-- .cs-isotop_item -->
-        <div class="cs-isotop_item cs-w66 mobile_apps">
-          <span
-            href="portfolio-details.html"
-            class="cs-portfolio cs-style1 cs-type1"
-          >
-            <div class="cs-portfolio_hover"></div>
-            <div
-              class="cs-portfolio_bg cs-bg"
-              data-src="assets/img/3d-visual/4.jpg"
-            ></div>
-          </span>
-        </div>
-        <!-- .cs-isotop_item -->
-        <div class="cs-isotop_item">
-          <span class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div
-              class="cs-portfolio_bg cs-bg"
-              data-src="assets/img/3d-visual/5.jpg"
-            ></div>
-          </span>
-        </div>
-        <!-- .cs-isotop_item -->
-        <div class="cs-isotop_item">
-          <span class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div
-              class="cs-portfolio_bg cs-bg"
-              data-src="assets/img/3d-visual/6.jpg"
-            ></div>
-          </span>
-        </div>
-        <!-- .cs-isotop_item -->
-        <div class="cs-isotop_item cs-w66 logo_design">
-          <span class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div
-              class="cs-portfolio_bg cs-bg"
-              data-src="assets/img/3d-visual/7.jpg"
-            ></div>
-          </span>
-        </div>
-        <!-- .cs-isotop_item -->
-        <div class="cs-isotop_item">
-          <span class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div
-              class="cs-portfolio_bg cs-bg"
-              data-src="assets/img/3d-visual/8.jpg"
-            ></div>
-          </span>
-        </div>
-        <!-- .cs-isotop_item -->
-        <div class="cs-isotop_item">
-          <span class="cs-portfolio cs-style1 cs-type1">
-            <div class="cs-portfolio_hover"></div>
-            <div
-              class="cs-portfolio_bg cs-bg"
-              data-src="assets/img/3d-visual/9.jpg"
-            ></div>
-          </span>
-        </div>
+        <div
+          id="my-gallery"
+          style="max-width: 50vw; margin: auto; max-height: 50vh"
+        ></div>
       </div>
-      <div class="cs-height_90 cs-height_lg_40"></div>
     </div>
     <!-- End Portfolio -->
-    <div class="cs-height_145 cs-height_lg_80"></div>
+    <div class="cs-height_140 cs-height_lg_180"></div>
+    <div class="cs-height_140 cs-height_lg_180"></div>
+    <div class="cs-height_140 cs-height_lg_180"></div>
 
     <!-- Start CTA -->
     <section>
@@ -359,7 +279,7 @@
                 <div class="cs-text_widget">
                   <div class="footer-logo">
                     <img src="assets/img/footer-logo.png" alt="Thumb" />
-                    <span>Keerti Studios</span>
+                    <span>Keerti Creations</span>
                   </div>
                   <p>
                     Come visit us at our office and discover how we can elevate
@@ -438,8 +358,8 @@
                     House#4, Block#F, Road#8, Niketan, Gulshan-1, Dhaka 1212
                   </li>
                   <li>+8801768073356</li>
-                  <a href="mailto:info@keertistudios.com"
-                    >info@keertistudios.com</a
+                  <a href="mailto:info@keerticreations.com"
+                    >info@keerticreations.com</a
                   >
                 </ul>
               </div>
@@ -450,7 +370,7 @@
       <div class="container">
         <div class="cs-bottom_footer">
           <div class="cs-bottom_footer_left">
-            <div class="cs-copyright">Copyright © 2024 Kirti Studios.</div>
+            <div class="cs-copyright">Copyright © 2024 Keerti Creations.</div>
           </div>
         </div>
       </div>
@@ -486,7 +406,9 @@
       </div>
     </div>
     <!-- End Video Popup -->
+
     <!-- Script -->
+    <script src="assets/js/cloud.js"></script>
     <script src="assets/js/plugins/jquery-3.6.0.min.js"></script>
     <script src="assets/js/plugins/isotope.pkg.min.js"></script>
     <script src="assets/js/plugins/jquery.slick.min.js"></script>

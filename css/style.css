@@ -4740,6 +4740,7 @@ label {
 .cs-hero.cs-style4 .cs-hero_title span {
   display: inline-block;
   position: relative;
+  color: #FF4A17;
 }
 .cs-hero.cs-style4 .cs-hero_title span::before {
   content: "";

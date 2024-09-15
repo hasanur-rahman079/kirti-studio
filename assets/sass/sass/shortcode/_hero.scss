@@ -347,6 +347,7 @@
     span {
       display: inline-block;
       position: relative;
+      color: $accent;
       &::before {
         content: "";
         position: absolute;
